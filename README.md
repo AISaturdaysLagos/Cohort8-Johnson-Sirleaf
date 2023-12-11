@@ -6,6 +6,10 @@
 
 The project aims to develop a machine learning-based predictive model for assessing the risk of diabetes in individuals. By leveraging historical health data, the goal is to create an accurate tool that can identify individuals at high risk of developing diabetes, enabling early intervention and personalized healthcare. The ultimate goal is to facilitate early intervention and enable personalized healthcare strategies.
 
+## Link to the project online
+
+visit [here](https://tranquil-llama-c1669d.netlify.app)
+
 ### Significance
 
 The significance of our project lies in its potential to revolutionize diabetes prevention and management through:
