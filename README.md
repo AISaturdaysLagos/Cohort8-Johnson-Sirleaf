@@ -28,6 +28,10 @@ The significance of our project lies in its potential to revolutionize diabetes 
 
 Explain how to get a copy of the project up and running on a local machine for development and testing purposes
 
+## Link to the project online
+
+visit [here](https://tranquil-llama-c1669d.netlify.app)
+
 ## Installation
 
 1. Make sure you have docker installed on your machine from [here](https://www.docker.com/products/docker-desktop/)
