@@ -1,19 +1,21 @@
 <template>
-  <div class="bg-primary h-[97vh] w-full relative">
+  <div class="bg-primary h-[97vh] w-full relative overflow-y-auto mb-4">
     <MultiFormStepper :currentStep="currentStep" />
     <form
       @submit="submit"
       class="w-full h-full flex justify-center items-center"
     >
       <transition name="fade">
-        <AppDescription v-if="currentStep === 0" />
+        <AppDescription v-if="currentStep === 0" @next="nextStep" />
       </transition>
       <transition name="fade">
         <div
           v-if="currentStep === 1"
-          class="w-[80%] h-[70%] flex flex-col justify-center items-center"
+          class="w-full md:w-[80%] lg:w-[70%] p-4 md:p-8 flex flex-col justify-center items-center"
         >
-          <div class="mb-4 grid grid-cols-2 gap-10 w-full">
+          <div
+            class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-10 w-full"
+          >
             <BaseInput
               :modelValue="firstName"
               placeholder="Please enter your first name"
@@ -35,7 +37,9 @@
               @change="handleChange"
             />
           </div>
-          <div class="mb-4 grid grid-cols-2 gap-10 w-full">
+          <div
+            class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-10 w-full"
+          >
             <BaseInput
               :modelValue="age"
               placeholder="Please enter your age"
@@ -71,16 +75,16 @@
           </div>
         </div>
       </transition>
+
       <transition name="fade">
         <div
           v-if="currentStep === 2"
-          class="w-[50%] h-[70%] flex flex-col justify-center items-center"
+          class="w-full md:w-[50%] lg:w-[50%] p-4 md:p-8 flex flex-col justify-center items-center"
         >
-          <div class="w-full mb-8">
+          <div class="mb-8 w-full">
             <BaseRadioGroup
               :modelValue="hypertension"
-              label="Have you ever been
-            diagnosed with hypertension or high blood pressure?"
+              label="Have you ever been diagnosed with hypertension or high blood pressure?"
               name="hypertension"
               :error="errors.hypertension"
               :required="true"
@@ -96,8 +100,7 @@
           <div class="mb-8 w-full">
             <BaseRadioGroup
               :modelValue="heartDisease"
-              label="Have you ever been
-            diagnosed with any heart disease?"
+              label="Have you ever been diagnosed with any heart disease?"
               name="heartDisease"
               :error="errors.heartDisease"
               :required="true"
@@ -113,8 +116,7 @@
           <div class="w-full">
             <BaseRadioGroup
               :modelValue="diabetes"
-              label="Have you ever been
-            diagnosed with diabetes?"
+              label="Have you ever been diagnosed with diabetes?"
               name="diabetes"
               :error="errors.diabetes"
               :required="true"
@@ -132,9 +134,11 @@
       <transition name="fade">
         <div
           v-if="currentStep === 3"
-          class="w-[80%] h-[70%] flex flex-col justify-center items-center"
+          class="w-full md:w-[80%] lg:w-[70%] p-4 md:p-8 flex flex-col justify-center items-center"
         >
-          <div class="mb-4 grid grid-cols-2 gap-10 w-full">
+          <div
+            class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-10 w-full"
+          >
             <BaseSelect
               :modelValue="smokingHistory"
               label="Smoking History"
@@ -155,19 +159,21 @@
               :modelValue="bmi"
               placeholder="Please enter your BMI information"
               label="BMI"
-              type="number"
+              type="text"
               name="bmi"
               :error="errors.bmi"
               :required="true"
               @change="handleChange"
             />
           </div>
-          <div class="mb-4 grid grid-cols-2 gap-10 w-full">
+          <div
+            class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-10 w-full"
+          >
             <BaseInput
               :modelValue="hbA1cLevel"
               placeholder="What's your Hemoglobin A1c Level"
               label="Hemoglobin A1c Level"
-              type="number"
+              type="text"
               name="hbA1cLevel"
               :error="errors.hbA1cLevel"
               :required="true"
@@ -177,7 +183,7 @@
               :modelValue="bloodGlucoseLevel"
               placeholder="Please enter blood glucose level"
               label="Blood Glucose Level"
-              type="number"
+              type="text"
               name="bloodGlucoseLevel"
               :error="errors.bloodGlucoseLevel"
               :required="true"
@@ -190,9 +196,10 @@
         @next="nextStep"
         @prev="prevStep"
         :currentStep="currentStep"
+        :loading="loading"
       />
     </form>
-    <pre class="text-white">{{ errors }}</pre>
+    <!-- <pre class="text-white">{{ loading }}</pre> -->
   </div>
 </template>
 
@@ -215,6 +222,10 @@ export default {
   setup() {
     const swal = inject("$swal");
     const initialValue = ref({});
+    const loading = ref(false);
+    const url = ref(
+      "https://diabetic-risk-assessment.onrender.com/api/diabetic-checker"
+    );
 
     const currentStep = ref(0);
     const maxStep = 3;
@@ -285,11 +296,13 @@ export default {
     };
 
     const submit = handleSubmit((values) => {
+      loading.value = true;
       const {
         heartDisease,
         hbA1cLevel,
         smokingHistory,
         bloodGlucoseLevel,
+        hypertension,
         age,
         bmi,
         diabetes,
@@ -297,10 +310,11 @@ export default {
       } = values;
 
       axios
-        .post("http://localhost:5000/api/diabetic-checker", {
+        .post(url.value, {
           ...rest,
           age: +age,
           bmi: +bmi,
+          hypertension: +hypertension,
           heart_disease: +heartDisease,
           HbA1c_level: +hbA1cLevel,
           smoking_history: smokingHistory,
@@ -322,6 +336,7 @@ export default {
             currentStep.value = 0;
             resetForm();
           }, 2000);
+          loading.value = false;
         })
         .catch((err) => {
           swal({
@@ -330,6 +345,7 @@ export default {
             showConfirmButton: false,
             timer: 1500,
           });
+          loading.value = false;
         });
     });
 
@@ -357,6 +373,7 @@ export default {
       errors,
       submit,
       handleChange,
+      loading,
     };
   },
 };
