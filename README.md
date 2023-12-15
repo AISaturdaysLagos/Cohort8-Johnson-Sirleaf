@@ -72,7 +72,7 @@ a. Make sure you have docker installed on your machine from [here](https://www.d
 b. Clone the repository
 
 ```shell
-   git clone https://github.com/AISaturdaysLagos/Cohort8-Johnson-Sirleaf.git`
+git clone https://github.com/AISaturdaysLagos/Cohort8-Johnson-Sirleaf.git`
 ```
 
 c. Change directory into the repository
@@ -93,11 +93,14 @@ e. Run the command to stop both the frontend and backend applications
 make stop
 ```
 
-d. visit this links on your browsers for local testing
-i. <http://localhost:5000> for backend service
-ii. <http://localhost:8080> for frontend service
+d. visit this links on your browsers for local testing.
+
+- <http://localhost:5000> for backend service
+- <http://localhost:8080> for frontend service
+
 f. visit this links on your browsers to test the deployed application
-i. visit [here](https://tranquil-llama-c1669d.netlify.app)
+
+- visit [here](https://tranquil-llama-c1669d.netlify.app)
 
 ## Acknowledgments
 
