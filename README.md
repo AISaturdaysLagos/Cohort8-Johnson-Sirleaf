@@ -68,6 +68,7 @@ Follow this steps to run the project on your machine.
 ### Installation
 
 a. Make sure you have docker installed on your machine from [here](https://www.docker.com/products/docker-desktop/)
+
 b. Clone the repository
 
 ```shell
@@ -77,7 +78,7 @@ b. Clone the repository
 c. Change directory into the repository
 
 ```shell
-   cd Cohort8-Johnson-Sirleaf
+cd Cohort8-Johnson-Sirleaf
 ```
 
 d. Run the command to start both the frontend and backend applications
