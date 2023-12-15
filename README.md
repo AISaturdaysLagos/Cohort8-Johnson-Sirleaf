@@ -114,17 +114,12 @@ Olawale Abimbbola - Your guidance and valuable feedback played a pivotal role in
 
 ## Support and Contact
 
-- **Oluwafemi Akinode**
-  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/oluwafemi-akinode-572459148)
+- **Oluwafemi Akinode** - [linkedin.com/in](https://www.linkedin.com/in/oluwafemi-akinode-572459148)
 
-- **Buraimoh Glory**
-  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/gloryburaimoh)
+- **Buraimoh Glory** - [linkedin.com/in](https://www.linkedin.com/in/gloryburaimoh)
 
-- **Dolamu Oludare**
-  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/dolamu-oludare-76097b133/)
+- **Dolamu Oludare** - [linkedin.com/in](https://www.linkedin.com/in/dolamu-oludare-76097b133/)
 
-- **Usman Daudu**
-  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/usmanadaudu)
+- **Usman Daudu** - [linkedin.com/in](https://www.linkedin.com/in/usmanadaudu)
 
-- **Stanley Oguazu**
-  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/chinedu-oguazu-bba88440/)
+- **Stanley Oguazu** - [linkedin.com/in](https://www.linkedin.com/in/chinedu-oguazu-bba88440/)
