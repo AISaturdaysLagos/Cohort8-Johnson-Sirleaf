@@ -104,25 +104,27 @@ f. visit this links on your browsers to test the deployed application
 
 ## Acknowledgments
 
-We would like to acknowledge the outstanding contributions of :
+We would like to acknowledge the outstanding contributions of:
+
 Olawale Abimbbola - Your guidance and valuable feedback played a pivotal role in steering the course of this research. Your patience and positive encouragement provided steadfast support during the hurdles we encountered.
-**Email** - [abimbolaolawale41@gmail.com](abimbolaolawale41@gmail.com)
-**Github** - [https://github.com/olawale0254](https://github.com/olawale0254)
-**Linkedin** - [https://www.linkedin.com/in/bimbolawale](https://www.linkedin.com/in/bimbolawale)
+
+- **Email** - [abimbolaolawale41@gmail.com](abimbolaolawale41@gmail.com)
+- **Github** - [https://github.com/olawale0254](https://github.com/olawale0254)
+- **Linkedin** - [https://www.linkedin.com/in/bimbolawale](https://www.linkedin.com/in/bimbolawale)
 
 ## Support and Contact
 
-**Name** - Oluwafemi Akinode
-**Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/oluwafemi-akinode-572459148)
+- **Oluwafemi Akinode**
+  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/oluwafemi-akinode-572459148)
 
-**Name** - Buraimoh Glory
-**Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/gloryburaimoh)
+- **Buraimoh Glory**
+  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/gloryburaimoh)
 
-**Name** - Dolamu Oludare
-**Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/dolamu-oludare-76097b133/)
+- **Dolamu Oludare**
+  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/dolamu-oludare-76097b133/)
 
-**Name** - Usman Daudu
-**Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/usmanadaudu)
+- **Usman Daudu**
+  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/usmanadaudu)
 
-**Name** - Stanley Oguazu
-**Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/chinedu-oguazu-bba88440/)
+- **Stanley Oguazu**
+  **Linkedin** - [linkedin.com/in](https://www.linkedin.com/in/chinedu-oguazu-bba88440/)
