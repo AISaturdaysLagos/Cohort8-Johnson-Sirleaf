@@ -76,14 +76,15 @@ b. Clone the repository
 
 c. Change directory into the repository
 
-````shell
-  cd Cohort8-Johnson-Sirleaf
-  ```
+```shell
+   cd Cohort8-Johnson-Sirleaf
+```
+
 d. Run the command to start both the frontend and backend applications
 
 ```shell
 make start
-````
+```
 
 e. Run the command to stop both the frontend and backend applications
 
